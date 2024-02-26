@@ -23,6 +23,12 @@
 	                        <li class="nav-item">
 	                            <a class="nav-link" href="{{ route('inscri') }}">Inscripciones</a>
 	                        </li>
+	                        <li class="nav-item">
+	                            <a class="nav-link" href="{{ route('center') }}">Centro Votacion</a>
+	                        </li>
+	                        <li class="nav-item">
+	                            <a class="nav-link" href="{{ route('index') }}">index</a>
+	                        </li>
 	                    </ul>
 	                </div>
 	            </div>

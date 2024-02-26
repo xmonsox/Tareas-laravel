@@ -1,5 +1,6 @@
 <?php
-
+use App\Http\Controllers\PersonController;
+use App\Http\Controllers\CenterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,3 +19,8 @@ Route::get('/', function () {
 });
 Route::view('/inscripcion','inscripcion')->name('inscri');
 Route::view('/Principal','Principal')->name('prin');
+// Route::view('/CentroV','centroV')->name('center');
+
+Route::get('/index', [PersonController::class, 'index'])->name('index');
+
+Route::get('/Center', [CenterController::class, 'center'])->name('center');
