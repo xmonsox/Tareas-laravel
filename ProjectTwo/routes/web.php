@@ -1,6 +1,8 @@
 <?php
 use App\Http\Controllers\PersonController;
 use App\Http\Controllers\CenterController;
+use App\Http\Controllers\LeaderController;
+use App\Http\Controllers\ZoneController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +26,7 @@ Route::view('/Principal','Principal')->name('prin');
 Route::get('/index', [PersonController::class, 'index'])->name('index');
 
 Route::get('/Center', [CenterController::class, 'center'])->name('center');
+
+Route::get('/Leader', [LeaderController::class, 'index'])->name('leader');
+
+Route::get('/Zone', [ZoneController::class, 'index'])->name('zone');

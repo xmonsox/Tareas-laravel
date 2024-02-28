@@ -24,6 +24,10 @@
       <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo electrónico">
     </div>
     <div class="mb-3">
+      <label for="correo" class="form-label">Lider</label>
+      <input type="email" class="form-control" id="lider" placeholder="Ingrese el lider">
+    </div>
+    <div class="mb-3">
       <label for="zona" class="form-label">Zona</label>
       <select class="form-select" id="zona">
         <option selected disabled>Seleccione una zona</option>
@@ -50,7 +54,9 @@
         <option value="A3">A3</option>
       </select>
     </div>
-    <button type="submit" class="btn btn-primary">Enviar</button>
+    <div class="mb-4 text-center  ">
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
   </form>
 </div>
 @endsection

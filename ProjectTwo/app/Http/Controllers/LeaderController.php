@@ -1,18 +1,18 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Center;
+use App\Models\Leader;
 use Illuminate\Http\Request;
 
-class CenterController extends Controller
+class LeaderController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $centers = Center::all();
-            return view('centroV', compact('centers'));
+        $leader = Leader::all();
+        return view('leaderView', compact('leader'));
     }
 
     /**
@@ -20,7 +20,7 @@ class CenterController extends Controller
      */
     public function create()
     {
-        // 
+        //
     }
 
     /**

@@ -1,18 +1,18 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Center;
-use Illuminate\Http\Request;
 
-class CenterController extends Controller
+use Illuminate\Http\Request;
+use App\Models\Zone;
+class ZoneController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $centers = Center::all();
-            return view('centroV', compact('centers'));
+        $zone = Zone::all();
+        return view('zone', compact('zone'));
     }
 
     /**
@@ -20,7 +20,7 @@ class CenterController extends Controller
      */
     public function create()
     {
-        // 
+        //
     }
 
     /**

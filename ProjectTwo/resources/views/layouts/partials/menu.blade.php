@@ -29,6 +29,12 @@
 	                        <li class="nav-item">
 	                            <a class="nav-link" href="{{ route('index') }}">index</a>
 	                        </li>
+	                        <li class="nav-item">
+	                            <a class="nav-link" href="{{ route('leader') }}">Leader</a>
+	                        </li>
+	                        <li class="nav-item">
+	                            <a class="nav-link" href="{{ route('zone') }}">Zone</a>
+	                        </li>
 	                    </ul>
 	                </div>
 	            </div>

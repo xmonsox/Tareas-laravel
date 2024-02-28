@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('direccion');
             $table->string('telefono');
             $table->string('email');
+            $table->string('lider');
             $table->enum('zona', ['Cuba', 'Cartago', 'Provincia', 'Centro'])->default('Cuba');
             $table->enum('centro_v', ['SorMaria', 'Juan XXIII', 'SENA'])->default('SENA');
             $table->enum('puesto_v', ['A1', 'A2', 'A3', 'A4'])->default('A1');
